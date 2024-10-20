@@ -1,0 +1,63 @@
+1. Short Description
+This mobile app helps piano learners and enthusiasts manage their sheet music, track practice sessions, and set goals for learning new pieces. Users can upload or select sheet music from a library, mark progress on each piece, and keep track of practice time and goals. The app works both online and offline, ensuring users can track their piano practice anytime, anywhere.
+
+2. Domain Details (Entities)
+User: Name, email, password, skill level (beginner/intermediate/advanced), preferred genre.
+Sheet Music: Title, composer, difficulty level, genre, upload date.
+Practice Session: Date, duration, piece played, progress (percentage), notes.
+Goal: Sheet music piece, target completion date, progress (percentage), notes.
+Log: Session ID, sheet music ID, time spent, achievements unlocked.
+
+3. CRUD Operations (Create, Read, Update, Delete)
+Create:
+Users can upload new sheet music.
+Users can create new practice sessions, specifying the sheet music they worked on.
+Users can set new learning goals for each sheet music piece.
+
+Read:
+Users can view their sheet music library, including details like title, composer, and difficulty.
+Users can review past practice sessions and track their progress over time.
+Users can view their progress toward goals, including how much of each piece has been learned.
+
+Update:
+Users can update their practice progress on a piece of music.
+Users can adjust goals, changing target dates or resetting progress.
+Users can edit session details, adding notes about difficulties or areas of improvement.
+
+Delete:
+Users can delete a sheet music piece from their library.
+Users can delete past practice sessions if they were recorded in error.
+Users can remove goals for learning a specific piece of music.
+
+4. Persistence Details
+Local DB:
+Users can upload new sheet music and save it locally.
+Practice sessions will be saved locally when the device is offline.
+Progress toward goals will be saved offline until the device reconnects to the server.
+
+Server:
+When online, all uploaded sheet music and practice sessions will be synchronized with the server.
+Progress toward goals will be updated on the server once the device reconnects.
+
+5. Offline Mode Scenarios
+Create:
+Users can upload new sheet music and create practice sessions while offline. These will be synced with the server once the device goes online.
+
+Read:
+Users can view their sheet music library and past practice sessions even when offline.
+
+Update:
+Progress on sheet music pieces can be updated offline. The changes will be reflected on the server once online.
+
+Delete:
+Users can delete sheet music and practice sessions while offline. The deletions will be synchronized with the server when back online.
+
+6. App Mockup
+I will design two screens for the app using the following descriptions:
+
+Sheet Music Library Screen: A screen where users can browse their collection of sheet music with options to filter by genre, difficulty, or composer. Users can select a piece to view more details or start practicing it.
+
+Add/Edit Practice Session Screen: A screen for adding or editing a practice session, where users can select the piece of music they practiced, record the session duration, and add notes on what they worked on.
+
+I'll generate the mockup for these screens now.
+
